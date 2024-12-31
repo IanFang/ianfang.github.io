@@ -1,0 +1,147 @@
+*******************************************************************************
+Data-driven Discovery of Chemical Short-range Order in NiCoCr Alloys Using API
+*******************************************************************************
+
+Motivation
+==========
+
+- Address challenges in characterizing chemical short-range order (CSRO):
+
+  * Complex microstructures in Multi-principal Element Alloys (MPEAs).
+  * Limitations of Atomic Probe Tomography (APT) in data reconstruction and resolution.
+  * Need for quantitative metrics to link CSRO to mechanical properties.
+
+- Enable rational design of advanced alloys by understanding CSRO-property relationships.
+
+**Placeholder: Conceptual diagram showing challenges in APT and motivation for API.**
+
+
+Multi-principal Element Alloys (MPEAs)
+======================================
+
+- Definition and characteristics:
+
+  * Near-equiatomic compositions of multiple elements.
+  * High configurational entropy, promoting solid solution phases.
+
+- Deviation from random distributions due to:
+
+  * Synthesis methods.
+  * Thermal treatments.
+
+- Focus on NiCoCr as a medium-entropy alloy (MEA):
+
+  * Exceptional mechanical properties under varied conditions.
+
+**Placeholder: Schematic of alloy microstructure showing elemental distribution.**
+
+
+Atomic Probe Tomography (APT)
+=============================
+
+- Working principles:
+
+  * Field evaporation for atomic-level mapping.
+  * Ion detection and 3D reconstruction.
+
+- Limitations:
+
+  * Data loss and spatial resolution artifacts.
+  * Challenges in detecting CSROs due to random noise.
+
+- Incorporating machine-learning analysis to overcome limitations.
+
+**Placeholder: Diagram illustrating APT principles and typical data artifacts.**
+
+
+Chemical Short-range Order (CSRO)
+=================================
+
+- Definition:
+
+  * Local compositional ordering within a few atomic shells.
+
+- Characteristics:
+
+  * Short-range and layered structure.
+  * Influences deformation mechanisms, e.g., slip and twinning.
+
+- Role in mechanical properties:
+
+  * Yield strength, toughness, and hardness .
+
+**Placeholder: Graph showing CSRO profiles for different conditions.**
+
+
+Alien-philic Index (API)
+========================
+
+- Definition:
+
+  * Quantifies the probability of finding a different element in the first coordination shell.
+  * Captures preference for heterogeneous neighbors, identifying CSRO intensity .
+
+- Calculation methodology:
+
+  * Machine-learning algorithms applied to APT data.
+  * Accounts for data loss and noise during detection.
+
+- Key advantages:
+
+  * Tolerates random data loss.
+  * Provides quantitative metrics for CSROs.
+
+**Placeholder: Formula and example calculation of API values.**
+
+**Placeholder: Histogram or plot showing API distribution trends across shells.**
+
+
+Case Study: NiCoCr Alloy
+========================
+
+- Sample preparation and heat treatments:
+
+  * Conditions: 600 °C, 800 °C, 1100 °C.
+  * Varied SRO states due to thermal processing.
+
+- Experimental observations:
+
+  * Higher SRO at 800 °C correlates with maximum yield strength and hardness .
+  * Lower SRO at 1100 °C enhances ductility but reduces strength .
+
+- Visualizing trends:
+
+  * Stress-strain curves showing mechanical performance across samples .
+  * API decay plots highlighting SRO intensities .
+
+**Placeholder: Stress-strain curves and hardness vs. temperature plots.**
+
+
+Results and Discussion
+=======================
+
+- Machine-learning validation of API predictions.
+- Decay trends in API reveal short-range ordering within the first few atomic shells.
+- Correlation between API and mechanical properties demonstrates tunable alloy design.
+
+**Placeholder: Comparative plot of API decay profiles for different heat treatments.**
+**Placeholder: Microstructure images showing twinning and slip patterns.**
+
+
+Conclusion and Outlook
+=======================
+
+- Contributions:
+
+  * Introduced API as a robust indicator of CSRO in MPEAs.
+  * Demonstrated API’s resilience to APT artifacts and data loss.
+  * Correlated SRO intensity with mechanical properties for alloy design.
+
+- Future directions:
+
+  * Extend API framework to other alloys and material systems.
+  * Integrate real-time machine-learning models for predictive material design.
+
+**Placeholder: Scheme illustrating API application for alloy optimization.**
+
+

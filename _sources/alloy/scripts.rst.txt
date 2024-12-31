@@ -1,0 +1,133 @@
+*******************************************************************************
+Data-driven Discovery of Chemical Short-range Order in NiCoCr Alloys Using API
+*******************************************************************************
+
+Slide 1: Title Slide (0:00–0:30)
+================================
+Hello everyone!
+Today, I’ll be talking about a **data-driven method** to study **chemical short-range order**—or **CSRO**—in a **NiCoCr alloy**.
+We’ll see how a new metric, the **Alien-philic Index (API)**, helps us understand material properties better.
+
+
+Slide 2: Motivation (0:30–2:00)
+===============================
+Why should we care about this?
+- Modern materials, like **multi-principal element alloys (MPEAs)**, are used in aerospace, medical implants, and energy systems.
+- These alloys are **strong, lightweight, and resistant to corrosion**—great for advanced applications.
+
+But there’s a **problem**:
+- Their atoms often **don’t mix randomly**—some prefer to stick together, forming patterns called **short-range order (SRO)**.
+- Understanding this order is **crucial** because it directly affects properties like **strength and toughness**.
+
+**Why is this hard to study?**
+- We rely on a tool called **Atomic Probe Tomography (APT)**, which creates **3D maps of atoms**.
+- However, it can lose data and introduce errors during reconstruction.
+
+**This is where our method comes in**—using machine learning and the API to make sense of the data and identify patterns.
+
+**[Placeholder: Motivation diagram—showing materials, APT process, and challenges.]**
+
+
+Slide 3: MPEAs – A New Class of Materials (2:00–3:30)
+======================================================
+What are MPEAs?
+- They are alloys made from **multiple main elements** instead of one dominant metal.
+- The **NiCoCr alloy** I studied is an example.
+
+Key properties:
+- **High strength** and **toughness** even in extreme conditions.
+- Great for **jet engines**, **spacecraft**, and **nuclear reactors**.
+
+But these alloys aren’t **perfectly random**.
+- Heat treatments and preparation methods can **change their atomic arrangement** and form **CSRO**.
+
+**[Placeholder: Diagram showing random vs. short-range ordered structure.]**
+
+
+Slide 4: Atomic Probe Tomography (APT) (3:30–5:00)
+===================================================
+How do we study these materials?
+- **APT** lets us **see atoms one-by-one** by evaporating them with a strong electric field.
+- We then use computers to **reconstruct** the data into a 3D model.
+
+But there are **limitations**:
+- Some atoms **don’t get detected**, so we lose data.
+- The 3D models can have **errors** in positioning.
+
+This makes it hard to identify **CSRO** patterns accurately.
+That’s why we developed a **new method**—the **Alien-philic Index (API)**.
+
+**[Placeholder: Image showing APT process and its limitations.]**
+
+
+Slide 5: Chemical Short-range Order (CSRO) (5:00–6:30)
+=======================================================
+What is CSRO?
+- It’s the **local ordering of atoms**—some atoms prefer to bond with specific neighbors.
+
+**Why does it matter?**
+- CSRO can affect how the material deforms under stress.
+- It impacts properties like **yield strength**, **toughness**, and **hardness**.
+
+**In short**—understanding CSRO helps us **design stronger, more durable materials**.
+
+**[Placeholder: Diagram comparing random vs. ordered atomic arrangements.]**
+
+
+Slide 6: The Alien-philic Index (API) (6:30–9:00)
+==================================================
+What is API?
+- It’s a **new metric** to measure CSRO.
+- It calculates the **probability of finding a different atom** around a given atom.
+
+**How does it work?**
+- Machine-learning algorithms analyze **neighboring atoms** to identify patterns.
+- It can handle **missing data** and **noise**, which is a big problem for APT.
+
+Why is it called **Alien-philic**?
+- “Alien” means **different element**, and “philic” means **loving**—it checks if atoms prefer to be near **different elements**.
+
+Key advantage?
+- It’s **simple** but **powerful** for detecting ordering patterns.
+
+**[Placeholder: Formula and example calculation of API values.]**
+**[Placeholder: Plot showing API trends.]**
+
+
+Slide 7: Case Study – NiCoCr Alloy (9:00–12:00)
+===============================================
+Now let’s look at a **real example**—the **NiCoCr alloy**.
+- I prepared samples treated at **600 °C, 800 °C, and 1100 °C**.
+- Then, I measured their **API profiles** and **mechanical properties** like strength and toughness.
+
+Key findings:
+- **800 °C** gave the **highest API values**, meaning **stronger SRO**.
+- This sample also had the **highest strength and hardness**.
+- At **1100 °C**, the SRO was weaker, making the material more **ductile** but **less strong**.
+
+**[Placeholder: Stress-strain curve and API vs. temperature plots.]**
+
+
+Slide 8: Results and Discussion (12:00–13:30)
+==============================================
+What does this mean?
+- **API** accurately predicts **how SRO impacts properties** like strength.
+- Higher SRO means **more resistance to deformation**—the material stays strong but may lose some flexibility.
+- By **adjusting heat treatments**, we can **fine-tune SRO** to get the properties we need.
+
+**[Placeholder: Comparative plots of API decay and mechanical properties.]**
+
+
+Slide 9: Conclusion and Outlook (13:30–15:00)
+=============================================
+In summary:
+- We introduced the **Alien-philic Index (API)** to measure **CSRO** in complex alloys.
+- API works even with **imperfect APT data** and gives **quantitative insights** into material properties.
+- We showed that **API correlates with mechanical performance**, opening the door to **better material designs**.
+
+What’s next?
+- Use this method for **other alloys**.
+- Apply **machine learning** to predict properties in **new materials** without long experiments.
+
+**Thank you for listening! I’ll be happy to answer any questions.**
+

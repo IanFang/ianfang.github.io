@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Data-driven Discovery of Chemical Short-range Order in NiCoCr Alloys Using API &#8212; Personal Sphinx Website 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=279e0f84" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="canonical" href="https://ianfang.github.io/alloy/scripts.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Personal Sphinx Website 0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Data-driven Discovery of Chemical Short-range Order in NiCoCr Alloys Using API</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="data-driven-discovery-of-chemical-short-range-order-in-nicocr-alloys-using-api">
+<h1>Data-driven Discovery of Chemical Short-range Order in NiCoCr Alloys Using API<a class="headerlink" href="#data-driven-discovery-of-chemical-short-range-order-in-nicocr-alloys-using-api" title="Link to this heading">¶</a></h1>
+<section id="slide-1-title-slide-0-000-30">
+<h2>Slide 1: Title Slide (0:00–0:30)<a class="headerlink" href="#slide-1-title-slide-0-000-30" title="Link to this heading">¶</a></h2>
+<p>Hello everyone!
+Today, I’ll be talking about a <strong>data-driven method</strong> to study <strong>chemical short-range order</strong>—or <strong>CSRO</strong>—in a <strong>NiCoCr alloy</strong>.
+We’ll see how a new metric, the <strong>Alien-philic Index (API)</strong>, helps us understand material properties better.</p>
+</section>
+<section id="slide-2-motivation-0-302-00">
+<h2>Slide 2: Motivation (0:30–2:00)<a class="headerlink" href="#slide-2-motivation-0-302-00" title="Link to this heading">¶</a></h2>
+<p>Why should we care about this?
+- Modern materials, like <strong>multi-principal element alloys (MPEAs)</strong>, are used in aerospace, medical implants, and energy systems.
+- These alloys are <strong>strong, lightweight, and resistant to corrosion</strong>—great for advanced applications.</p>
+<p>But there’s a <strong>problem</strong>:
+- Their atoms often <strong>don’t mix randomly</strong>—some prefer to stick together, forming patterns called <strong>short-range order (SRO)</strong>.
+- Understanding this order is <strong>crucial</strong> because it directly affects properties like <strong>strength and toughness</strong>.</p>
+<p><strong>Why is this hard to study?</strong>
+- We rely on a tool called <strong>Atomic Probe Tomography (APT)</strong>, which creates <strong>3D maps of atoms</strong>.
+- However, it can lose data and introduce errors during reconstruction.</p>
+<p><strong>This is where our method comes in</strong>—using machine learning and the API to make sense of the data and identify patterns.</p>
+<p><strong>[Placeholder: Motivation diagram—showing materials, APT process, and challenges.]</strong></p>
+</section>
+<section id="slide-3-mpeas-a-new-class-of-materials-2-003-30">
+<h2>Slide 3: MPEAs – A New Class of Materials (2:00–3:30)<a class="headerlink" href="#slide-3-mpeas-a-new-class-of-materials-2-003-30" title="Link to this heading">¶</a></h2>
+<p>What are MPEAs?
+- They are alloys made from <strong>multiple main elements</strong> instead of one dominant metal.
+- The <strong>NiCoCr alloy</strong> I studied is an example.</p>
+<p>Key properties:
+- <strong>High strength</strong> and <strong>toughness</strong> even in extreme conditions.
+- Great for <strong>jet engines</strong>, <strong>spacecraft</strong>, and <strong>nuclear reactors</strong>.</p>
+<p>But these alloys aren’t <strong>perfectly random</strong>.
+- Heat treatments and preparation methods can <strong>change their atomic arrangement</strong> and form <strong>CSRO</strong>.</p>
+<p><strong>[Placeholder: Diagram showing random vs. short-range ordered structure.]</strong></p>
+</section>
+<section id="slide-4-atomic-probe-tomography-apt-3-305-00">
+<h2>Slide 4: Atomic Probe Tomography (APT) (3:30–5:00)<a class="headerlink" href="#slide-4-atomic-probe-tomography-apt-3-305-00" title="Link to this heading">¶</a></h2>
+<p>How do we study these materials?
+- <strong>APT</strong> lets us <strong>see atoms one-by-one</strong> by evaporating them with a strong electric field.
+- We then use computers to <strong>reconstruct</strong> the data into a 3D model.</p>
+<p>But there are <strong>limitations</strong>:
+- Some atoms <strong>don’t get detected</strong>, so we lose data.
+- The 3D models can have <strong>errors</strong> in positioning.</p>
+<p>This makes it hard to identify <strong>CSRO</strong> patterns accurately.
+That’s why we developed a <strong>new method</strong>—the <strong>Alien-philic Index (API)</strong>.</p>
+<p><strong>[Placeholder: Image showing APT process and its limitations.]</strong></p>
+</section>
+<section id="slide-5-chemical-short-range-order-csro-5-006-30">
+<h2>Slide 5: Chemical Short-range Order (CSRO) (5:00–6:30)<a class="headerlink" href="#slide-5-chemical-short-range-order-csro-5-006-30" title="Link to this heading">¶</a></h2>
+<p>What is CSRO?
+- It’s the <strong>local ordering of atoms</strong>—some atoms prefer to bond with specific neighbors.</p>
+<p><strong>Why does it matter?</strong>
+- CSRO can affect how the material deforms under stress.
+- It impacts properties like <strong>yield strength</strong>, <strong>toughness</strong>, and <strong>hardness</strong>.</p>
+<p><strong>In short</strong>—understanding CSRO helps us <strong>design stronger, more durable materials</strong>.</p>
+<p><strong>[Placeholder: Diagram comparing random vs. ordered atomic arrangements.]</strong></p>
+</section>
+<section id="slide-6-the-alien-philic-index-api-6-309-00">
+<h2>Slide 6: The Alien-philic Index (API) (6:30–9:00)<a class="headerlink" href="#slide-6-the-alien-philic-index-api-6-309-00" title="Link to this heading">¶</a></h2>
+<p>What is API?
+- It’s a <strong>new metric</strong> to measure CSRO.
+- It calculates the <strong>probability of finding a different atom</strong> around a given atom.</p>
+<p><strong>How does it work?</strong>
+- Machine-learning algorithms analyze <strong>neighboring atoms</strong> to identify patterns.
+- It can handle <strong>missing data</strong> and <strong>noise</strong>, which is a big problem for APT.</p>
+<p>Why is it called <strong>Alien-philic</strong>?
+- “Alien” means <strong>different element</strong>, and “philic” means <strong>loving</strong>—it checks if atoms prefer to be near <strong>different elements</strong>.</p>
+<p>Key advantage?
+- It’s <strong>simple</strong> but <strong>powerful</strong> for detecting ordering patterns.</p>
+<p><strong>[Placeholder: Formula and example calculation of API values.]</strong>
+<strong>[Placeholder: Plot showing API trends.]</strong></p>
+</section>
+<section id="slide-7-case-study-nicocr-alloy-9-0012-00">
+<h2>Slide 7: Case Study – NiCoCr Alloy (9:00–12:00)<a class="headerlink" href="#slide-7-case-study-nicocr-alloy-9-0012-00" title="Link to this heading">¶</a></h2>
+<p>Now let’s look at a <strong>real example</strong>—the <strong>NiCoCr alloy</strong>.
+- I prepared samples treated at <strong>600 °C, 800 °C, and 1100 °C</strong>.
+- Then, I measured their <strong>API profiles</strong> and <strong>mechanical properties</strong> like strength and toughness.</p>
+<p>Key findings:
+- <strong>800 °C</strong> gave the <strong>highest API values</strong>, meaning <strong>stronger SRO</strong>.
+- This sample also had the <strong>highest strength and hardness</strong>.
+- At <strong>1100 °C</strong>, the SRO was weaker, making the material more <strong>ductile</strong> but <strong>less strong</strong>.</p>
+<p><strong>[Placeholder: Stress-strain curve and API vs. temperature plots.]</strong></p>
+</section>
+<section id="slide-8-results-and-discussion-12-0013-30">
+<h2>Slide 8: Results and Discussion (12:00–13:30)<a class="headerlink" href="#slide-8-results-and-discussion-12-0013-30" title="Link to this heading">¶</a></h2>
+<p>What does this mean?
+- <strong>API</strong> accurately predicts <strong>how SRO impacts properties</strong> like strength.
+- Higher SRO means <strong>more resistance to deformation</strong>—the material stays strong but may lose some flexibility.
+- By <strong>adjusting heat treatments</strong>, we can <strong>fine-tune SRO</strong> to get the properties we need.</p>
+<p><strong>[Placeholder: Comparative plots of API decay and mechanical properties.]</strong></p>
+</section>
+<section id="slide-9-conclusion-and-outlook-13-3015-00">
+<h2>Slide 9: Conclusion and Outlook (13:30–15:00)<a class="headerlink" href="#slide-9-conclusion-and-outlook-13-3015-00" title="Link to this heading">¶</a></h2>
+<p>In summary:
+- We introduced the <strong>Alien-philic Index (API)</strong> to measure <strong>CSRO</strong> in complex alloys.
+- API works even with <strong>imperfect APT data</strong> and gives <strong>quantitative insights</strong> into material properties.
+- We showed that <strong>API correlates with mechanical performance</strong>, opening the door to <strong>better material designs</strong>.</p>
+<p>What’s next?
+- Use this method for <strong>other alloys</strong>.
+- Apply <strong>machine learning</strong> to predict properties in <strong>new materials</strong> without long experiments.</p>
+<p><strong>Thank you for listening! I’ll be happy to answer any questions.</strong></p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Data-driven Discovery of Chemical Short-range Order in NiCoCr Alloys Using API</a><ul>
+<li><a class="reference internal" href="#slide-1-title-slide-0-000-30">Slide 1: Title Slide (0:00–0:30)</a></li>
+<li><a class="reference internal" href="#slide-2-motivation-0-302-00">Slide 2: Motivation (0:30–2:00)</a></li>
+<li><a class="reference internal" href="#slide-3-mpeas-a-new-class-of-materials-2-003-30">Slide 3: MPEAs – A New Class of Materials (2:00–3:30)</a></li>
+<li><a class="reference internal" href="#slide-4-atomic-probe-tomography-apt-3-305-00">Slide 4: Atomic Probe Tomography (APT) (3:30–5:00)</a></li>
+<li><a class="reference internal" href="#slide-5-chemical-short-range-order-csro-5-006-30">Slide 5: Chemical Short-range Order (CSRO) (5:00–6:30)</a></li>
+<li><a class="reference internal" href="#slide-6-the-alien-philic-index-api-6-309-00">Slide 6: The Alien-philic Index (API) (6:30–9:00)</a></li>
+<li><a class="reference internal" href="#slide-7-case-study-nicocr-alloy-9-0012-00">Slide 7: Case Study – NiCoCr Alloy (9:00–12:00)</a></li>
+<li><a class="reference internal" href="#slide-8-results-and-discussion-12-0013-30">Slide 8: Results and Discussion (12:00–13:30)</a></li>
+<li><a class="reference internal" href="#slide-9-conclusion-and-outlook-13-3015-00">Slide 9: Conclusion and Outlook (13:30–15:00)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/alloy/scripts.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Personal Sphinx Website 0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Data-driven Discovery of Chemical Short-range Order in NiCoCr Alloys Using API</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Ian Fang.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+  </body>
+</html>
