@@ -11,10 +11,14 @@ Alloy
 
 Multi-principal Element Alloys (MPEAs)
     These alloys are made from **several main elements** instead of relying on
-    one dominant metal. They are classified as **High-Entropy Alloys (HEAs)**
-    or **Medium-Entropy Alloys (MEAs)** depending on composition. They are
-    widely used in **aerospace** and **nuclear applications** due to their
-    unique properties.
+    one dominant metal. They are also known as **High-Entropy Alloys (HEAs)**
+    or **Medium-Entropy Alloys (MEAs)** depending on composition. As the old
+    names suggested, these alloys are considered to have **high entropy** as
+    subsitutional solid solutions in early research. The top-left subfigure in
+    :ref:`Figure 1 <figure-1>` demonstrate the random distribution of atoms in a
+    two-component alloy. However, recent studies have shown that some MPEAs
+    have **short-range order (SRO)**, which is contrary to the high entropy
+    assumption.
 
 Ideal Solid Solution
     An ideal solid solution assumes that atoms are **randomly mixed** and each
@@ -38,12 +42,24 @@ Mechanical Properties
     and **toughness**. These properties determine how a material behaves under
     **stress**, **deformation**, or **impact**.
 
+.. _figure-1:
+
+.. figure:: /_static/alloy/two-metals.svg
+    :alt: Figure 1: Two metals
+    :width: 70%
+    :align: center
+
+    Figure 1: Two metals `Image source <https://msestudent.com/the-difference-between-alloys-and-composites-and-compounds/>`__
+
 
 Atomic-level Structure and Order
 ================================
 Atomic Structure
     Atoms in materials form **crystal structures** where each atom has
-    **neighbors** arranged in a **lattice pattern**.
+    **neighbors** arranged in a **lattice pattern**. The three typical lattice
+    structures are **body-centered cubic (BCC)**, **face-centered cubic
+    (FCC)**, and **hexagonal close-packed (HCP)** as demonstrated in
+    :ref:`Figure 2 <figure-2>`.
 
 Short-range Order (SRO)
     SRO refers to **local patterns** where atoms **prefer specific neighbors**
@@ -55,6 +71,14 @@ Coordination Shell
     atom, while **outer shells** are farther neighbors. This concept helps
     define how **short-range order** is measured.
 
+.. _figure-2:
+
+.. figure:: /_static/alloy/bcc-fcc-hcp.svg
+    :alt: Figure 2: BCC, FCC, and HCP structures
+    :width: 70%
+    :align: center
+
+    Figure 2: BCC, FCC, and HCP structures `Image source <https://msestudent.com/what-is-the-difference-between-fcc-and-bcc-crystal-structure-properties-interstitial-sites-and-examples/>`__
 
 Material Characterization Methods
 ==================================
@@ -62,7 +86,7 @@ Atomic Probe Tomography (APT)
     APT is a method to **map atoms** in 3D by **evaporating them** using a
     **strong electric field**. It provides **atomic-level details** about
     composition and arrangement but often suffers from **data loss** and
-    **reconstruction errors**.
+    **reconstruction errors**. :ref:`Figure 3 <figure-3>` shows the schematic diagram of APT.
 
 Data Noise and Loss
     APT may **miss atoms** or **misplace their positions** during analysis.
@@ -72,6 +96,16 @@ Machine Learning for Data Analysis
     Machine learning algorithms are used to **recognize patterns** in noisy
     data, enabling **better predictions** of atomic behavior. They allow us to
     extract meaningful information even with **imperfect datasets**.
+
+.. figure-3:
+
+.. figure:: /_static/alloy/apt.png
+    :alt: Figure 3: Atomic Probe Tomography
+    :width: 70%
+    :align: center
+
+    Figure 3: Atomic Probe Tomography `Image source <https://universallab.org/blog/blog/understanding_apt/>`__
+
 
 Measuring Atomic Arrangements
 =============================
