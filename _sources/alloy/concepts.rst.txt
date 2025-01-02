@@ -97,7 +97,7 @@ Machine Learning for Data Analysis
     data, enabling **better predictions** of atomic behavior. They allow us to
     extract meaningful information even with **imperfect datasets**.
 
-.. figure-3:
+.. _figure-3:
 
 .. figure:: /_static/alloy/apt.png
     :alt: Figure 3: Atomic Probe Tomography
