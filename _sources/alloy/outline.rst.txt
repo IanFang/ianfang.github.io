@@ -1,139 +1,163 @@
-**************
-Slides Outline
-**************
+*******
+Outline
+*******
 
-Motivation
-==========
-- Address challenges in characterizing chemical short-range order (CSRO):
+Title: Data-driven Analysis of Chemical Short-range Order-Property Correlations
+in Multi-principal Element Alloys
 
-  * Complex microstructures in Multi-principal Element Alloys (MPEAs).
-  * Limitations of Atomic Probe Tomography (APT) in data reconstruction and
-    resolution.
-  * Need for quantitative metrics to link CSRO to mechanical properties.
+..
 
-- Enable rational design of advanced alloys by understanding CSRO-property
-  relationships.
+  Sean Fang*, Alice Zhang*, Cecilia Cao☆, Shusen Pu❖
+  * Pensacola High School, International Baccalaureate program
+  ☆  University of California, Berkeley
+  ❖  University of West Florida
+  Joint Mathematics Meeting
+  January 9, 2025
+  Seattle, WA, USA
 
+Outline
+=======
++ Introduction
+
+  - Multi-Principal Element Alloys (MPEAs)
+  - Atomic Probe Tomography (APT)
+  - Chemical Short-Range Order (CSRO)
+
++ Methodology:
+
+  - Equiatomic NiCoCr Alloy
+  - Data processing and analysis
+
++ Numerical Results and Discussions
++ Conclusion
 
 Multi-principal Element Alloys (MPEAs)
 ======================================
-- Definition and characteristics:
++ Near-equiatomic compositions of multiple elements
++ High configurational entropy solid solution ideally
++ Complex microstructures with short-range ordering in practical
++ MPEA Applications
 
-  * Near-equiatomic compositions of multiple elements.
-  * Ideally high configurational entropy solid solution phases.
-  * Actually, complex microstructures with short-range ordering depending on
-    the synthesis and processing conditions.
-
-- Deviation from random distributions with highest entropy due to:
-
-  * Synthesis methods.
-  * Thermal treatments.
-
-- Focus on NiCoCr as a medium-entropy alloy (MEA) in our study:
-
-  * Exceptional mechanical properties under varied conditions.
-
-Atomic Probe Tomography (APT)
-=============================
-- Working principles:
-
-  * Field evaporation for atomic-level mapping.
-  * Ion detection and 3D reconstruction.
-
-- Limitations:
-
-  * Data loss and spatial resolution artifacts.
-  * Challenges in detecting CSROs due to random noise.
-
-- Incorporating machine-learning analysis and develop robust metrics to
-  overcome limitations.
-
-Chemical Short-range Order (CSRO)
-=================================
-- Definition:
-
-  * Local compositional ordering within a few atomic shells.
-
-- Characteristics:
-
-  * Short-range and layered structure.
-  * Influences deformation mechanisms, e.g., slip and twinning.
-
-- Role in mechanical properties:
-
-  * Yield strength, toughness, and hardness .
-
-Alien-philic Index (API)
-========================
-- Definition:
-
-  * Quantifies the probability of finding a different element in the first
-    coordination shell.
-  * Captures preference for heterogeneous neighbors, identifying CSRO intensity
-    .
-
-- Calculation methodology:
-
-  * Machine-learning algorithms applied to APT data.
-  * Accounts for data loss and noise during detection.
-
-- Key advantages:
-
-  * Tolerates random data loss.
-  * Provides quantitative metrics for CSROs.
-
-**Placeholder: Formula and example calculation of API values.**
-
-**Placeholder: Histogram or plot showing API distribution trends across
-shells.**
+Objective
+=========
++ Address the challenges in chemical short-range order (CSRO) identification in
+  MPEAs
++ Enable rational design of advanced alloys with novel properties by
+  understanding CSRO-property relationships
 
 
-Case Study: NiCoCr Alloy
-========================
-- Sample preparation and heat treatments:
+Experimental Data Collection
+============================
++ Atomic Probe Tomography  (APT) is a nanoscale characterization technique that
+  maps the 3D atomic structure of materials by analyzing evaporated ions
++ Limitations:
 
-  * Conditions: 600 °C, 800 °C, 1100 °C.
-  * Varied SRO states due to thermal processing.
+  - Data loss and spatial resolution artifacts.
+  - Challenges in detecting CSROs due to random noise.
 
-- Experimental observations:
++ Data-driven methods to mitigate the limitations
 
-  * Higher SRO at 800 °C correlates with maximum yield strength and hardness .
-  * Lower SRO at 1100 °C enhances ductility but reduces strength .
+Chemical Short-Range Order (CSRO)
+==================================
++ Definition:
 
-- Visualizing trends:
+  - Local compositional ordering within a few atomic shells
 
-  * Stress-strain curves showing mechanical performance across samples .
-  * API decay plots highlighting SRO intensities .
++ Characteristics:
 
-**Placeholder: Stress-strain curves and hardness vs. temperature plots.**
+  - Short-range and layered
+  - Less complex than spatial SROs
 
++ Goal: Employ ML techniques to identify CSRO in APT datasets
 
-Results and Discussion
+ML-aided Pattern Detection in NiCoCr Alloy
+==========================================
+
+Animation showing 3D APT dataset with its projection and amplified sections
+
+Data Analysis Plan
+==================
++ Preparation:
+
+  - Remove outliers and noise
+  - Assign atomic labels to 3D point map
+
++ Nearest neighbor-based metrics:
+
+  - Focusing on constitutional information
+  - Mitigate intrinsic limitation of APT datasets
+
++ Quantitative CSRO indicator
+
+  - To check correlation to properties
+  - To lead new material/ preparation method design
+
+Data Pipeline flowchart
 =======================
-- Machine-learning validation of API predictions.
-- Decay trends in API reveal short-range ordering within the first few atomic
-  shells.
-- Correlation between API and mechanical properties demonstrates tunable alloy
-  design.
++ Data Preparation
 
-**Placeholder: Comparative plot of API decay profiles for different heat
-treatments.** **Placeholder: Microstructure images showing twinning and slip
-patterns.**
+  - Data loading
+  - Data labeling
+  - Data quality assessment
+  - Data cleaning
 
++ Exploratory Analysis
 
-Conclusion and Outlook
+  - Spacial Density
+  - Compositional Homogeneity
+
++ Visualization
+
+  - 3D Distribution of Elements
+  - Spatial Distribution Maps
+  - Short-range order
+
++ Data Pipeline Development
+
+  - Compute Alien-philic Index
+
+Data Loading and Labeling
+=========================
++ Load data files and data exploration
++ Assign element labels
+
+Understanding noises
+====================
+Histogram showing distribution of outliers of mass-charge ratio
+
+Composition and Spatial Density Evaluation
+==========================================
++ Chemical composition: counting the number of atoms of each element
++ Spatial analysis: atoms per cubic nanometer
+
+Nearest neighbor-based analysis
+===============================
++ Plot of distances of the ith nearest neighbor
++ Histogram of the nearest neighbor distances
+
+Spatial Distribution Maps
+=========================
++ Demonstrate periodicity of delta zs
++ A metric to estimate the degree of CSRO
+
+AGI metric and Property
 =======================
-- Contributions:
++ Alien-philic index (API) metric
 
-  * Introduced API as a robust indicator of CSRO in MPEAs.
-  * Demonstrated API’s resilience to APT artifacts and data loss.
-  * Correlated SRO intensity with mechanical properties for alloy design.
+  - The percentage of alien atoms in the first K nearest neighbors
+  - More deviation of AGI metric from ideal value suggest high SRO
 
-- Future directions:
++ Mechanical Properties
 
-  * Extend API framework to other alloys and material systems.
-  * Integrate real-time machine-learning models for predictive material design.
+  - High SRO leads to high yield stress and high toughness
+  - Low SRO leads to better ductility
 
-**Placeholder: Scheme illustrating API application for alloy optimization.**
-
+Conclusions
+===========
++ Understand chemical short-range order (SRO) in multi-principal element alloys
+  (MPEAs) is essential.
++ Addresses challenges of complex microstructures, APT data limitations, and
+  the need for quantitative CSRO-property metrics.
++ Development of robust analytical methods and tools is crucial.
++ Enabling precise establishment of CSRO-property relationships is essential.
 
