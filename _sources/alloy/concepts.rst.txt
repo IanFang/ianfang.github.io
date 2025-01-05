@@ -109,6 +109,25 @@ Machine Learning for Data Analysis
 
 Measuring Atomic Arrangements
 =============================
+zSDM (Spatial Distribution Map along z-axis)
+    Z-spatial distribution maps in atom probe tomography are specialized
+    analytical tools that help visualize the three-dimensional distribution of
+    elements within a material sample at the atomic scale. These maps are
+    particularly powerful when analyzing APT data since they provide
+    quantitative information about how different atomic species are arranged
+    along the depth (z-direction) of the needle-shaped specimen, complementing
+    the lateral (x-y) distribution information. By extracting this
+    depth-dependent compositional information from the precise atomic positions
+    recorded during APT analysis, researchers can identify features like
+    segregation at interfaces, clustering phenomena, and composition gradients
+    that might not be apparent from conventional 3D reconstruction views alone.
+
+    It is a visualization of distribution of relative positions of atoms to
+    their close neighbors along the z-direction. Periodicity in zSDM refers to
+    regular, repeating patterns in the atomic distribution along the
+    z-direction (analysis direction) of the sample. It suggest existence of
+    short-range order (SRO).
+
 Alien-philic Index (API)
     The API is a **mathematical tool** that measures **short-range order** by
     calculating the probability of finding **different elements** near a given
