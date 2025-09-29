@@ -9,3 +9,6 @@ This is the projects page.
 
    statistical-project
    alloy-project
+   activities
+   competitions
+

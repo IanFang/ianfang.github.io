@@ -5,6 +5,7 @@
 
    projects/index
    resume
+   honors
    about
 
 .. card:: Project 1
