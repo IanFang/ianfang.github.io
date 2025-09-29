@@ -1,0 +1,11 @@
+Projects
+========
+
+This is the projects page.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Projects:
+
+   statistical-project
+   alloy-project
