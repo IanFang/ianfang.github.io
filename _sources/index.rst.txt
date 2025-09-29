@@ -7,24 +7,18 @@
    resume
    about
 
-.. grid:: 2
+.. card:: Project 1
 
-    .. grid-item::
+  A brief description of :doc:`Project 1 <projects/statistical-project>`.
 
+  .. image:: _static/distribution-slides.png
+      :alt: Project 1
+      :width: 100%
 
-        **Project 1**
+.. card:: Project 2
 
-        A brief description of Project 1.
+  A brief description of :doc:`Project 2 <projects/alloy-project>`.
 
-        .. image:: _static/distribution.png
-            :alt: Project 1
-            :width: 100%
-
-    .. grid-item::
-
-        **Project 2**
-        A brief description of Project 2.
-
-        .. image:: images/project2.png
-            :alt: Project 2
-            :width: 100%
+  .. image:: images/project2.png
+      :alt: Project 2
+      :width: 100%
