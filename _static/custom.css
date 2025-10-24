@@ -1,4 +1,8 @@
 
+html {
+    --pst-font-size-base: 17px;
+}
+
 body {
     background: #f8f9fa;
     color: #222;
@@ -30,6 +34,17 @@ body {
     display: flex;
     align-items: center;
 }
+
+/* Make the header container span the full width and space items between
+     so the logo stays left and nav items are pushed to the far right. */
+.bd-header .container,
+.wy-nav-top .container,
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 .navbar-brand {
     font-size: 2rem;
     font-weight: 700;
@@ -48,7 +63,7 @@ body {
     color: #2563eb !important;
 }
 .navbar-nav {
-    margin-left: auto;
+    margin-left: 0;
     display: flex;
     gap: 1.5em;
 }
@@ -66,60 +81,6 @@ body {
     background: #f0f4ff;
 }
 
-/* Project Card Styles */
-.project-card {
-    background: #fff;
-    border-radius: 14px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-    padding: 32px 24px;
-    margin: 32px 0;
-    transition: box-shadow 0.2s, transform 0.2s;
-    cursor: pointer;
-    border: 1px solid #e5e5e5;
-}
-.project-card:hover {
-    box-shadow: 0 8px 32px rgba(37,99,235,0.10);
-    transform: translateY(-4px) scale(1.01);
-    border-color: #2563eb33;
-}
-.project-card-title {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    color: #2563eb;
-}
-.project-card-desc {
-    font-size: 1.1em;
-    color: #444;
-    margin-bottom: 0.5em;
-}
-.project-card-link {
-    color: #2563eb;
-    text-decoration: underline;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-.project-card-link:hover {
-    color: #1e40af;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-    font-weight: 700;
-    color: #222;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-}
-
-/* Remove Sphinx sidebar and footer */
-.sphinxsidebar, .related, .footer {
-    display: none !important;
-}
-
-h1 {
-    font-size: 4em;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1em;
+.bd-main .bd-content .bd-article-container {
+  max-width: 100%;  /* default is 60em */
 }
